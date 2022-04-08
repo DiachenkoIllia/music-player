@@ -13,10 +13,12 @@ const durTime = document.querySelector('#durTime');
 
 // Song titles
 const songs = [
-    'Air For Life (Dosem Remix) - Above   Beyond',
+    'Air For Life (Dosem Remix) - Above Beyond',
     'Alone - GVN',
     'Because Of You (ABGT475) - Scorz',
     'Poetry (Extended Mix) - Orjan Nilsen',
+    'Orjan Nilsen - Between the Rays (Original Mix)',
+    'Гимн Украины',
 ];
 
 // Keep track of song
@@ -28,7 +30,7 @@ loadSong(songs[songIndex]);
 // Update song details
 function loadSong(song) {
   title.innerText = song;
-  audio.src = `music/${song}.m4a`;
+  audio.src = `music/${song}.webm`;
   cover.src = `images/${song}.jpg`;
 }
 
